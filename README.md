@@ -85,8 +85,16 @@ pip install -r requirements.txt
 ```
 
 The histology-pretrained ViT encoders in stage 2a (Phikon-v2, UNI, CONCH,
-H-optimus-0, Virchow2) are optional and some require gated HuggingFace access;
-if a model is unavailable the encoder comparison simply skips it.
+H-optimus-0, Virchow2) are optional. To include them, also install the extras
+and authenticate with HuggingFace (some weights are gated):
+
+```bash
+pip install "transformers>=4.40" "huggingface-hub>=0.24"
+huggingface-cli login
+```
+
+If a model is unavailable the encoder comparison simply skips it; the rest of
+the pipeline and `predict.py` do not need these packages.
 
 ---
 
