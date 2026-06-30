@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "Deep Learning Semantic Segmentation of Fetal and Maternal Blood Spaces in Rat Placental Histology"
+abstract: >-
+  Code and reproducible pipeline for the automated semantic segmentation of
+  fetal (FBS) and maternal (MBS) blood spaces in CD31-immunostained E19.5 rat
+  placental histology, and downstream morphometric validation.
+authors:
+  - family-names: Amruddin
+    given-names: Ruslan
+    affiliation: "Department of Biomedical and Molecular Sciences, Queen's University"
+  - family-names: Sarwari
+    given-names: Naween
+    affiliation: "Department of Computer Science, Western University"
+  - family-names: Liu
+    given-names: Savvy
+    affiliation: "Faculty of Computing and Software, McMaster University"
+  - family-names: Natale
+    given-names: Bryony V.
+    affiliation: "Department of Biomedical and Molecular Sciences, Queen's University"
+  - family-names: Natale
+    given-names: David R. C.
+    affiliation: "Department of Biomedical and Molecular Sciences, Queen's University"
+keywords:
+  - placental vascular architecture
+  - semantic segmentation
+  - deep learning
+  - digital pathology
+  - CD31 immunohistochemistry
+  - morphometric analysis
+license: MIT

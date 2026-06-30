@@ -1,0 +1,27 @@
+# --- Study data, model weights, and generated outputs are NOT tracked ---
+# This repository ships code and setup only. Data and trained weights are
+# distributed via the archive referenced in the paper (see README).
+data/cd31_images/*
+data/masks/*
+!data/cd31_images/.gitkeep
+!data/masks/.gitkeep
+
+checkpoints/
+results/
+predictions/
+outputs/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# --- OS / editor ---
+.DS_Store
+*.swp
+.vscode/
+.idea/
