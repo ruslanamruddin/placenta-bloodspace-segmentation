@@ -13,10 +13,9 @@ that reviewers and readers can inspect exactly how every result in the paper was
 produced and reproduce the study end to end.
 
 It is **code and setup only.** The histology images, ground-truth masks, trained
-model weights, and result files are not included here — they are distributed
-through the archive referenced in the paper's *Data and materials availability*
-statement. Plug the data into `data/` (see [`data/README.md`](data/README.md))
-and the pipeline reproduces everything.
+model weights, and result files are not included here. Plug the data into `data/`
+(see [`data/README.md`](data/README.md)) and the pipeline reproduces everything,
+including the trained model weights.
 
 ---
 
@@ -127,15 +126,14 @@ python run_pipeline.py --dry-run  # print the commands without running them
 ## Trained model weights
 
 The trained weights (`final_model_best.pth`, ConvNeXt-Small + U-Net, ~205 MB) are
-**not stored in this repository**. They are archived on Zenodo:
+**not stored in this repository**. Reproduce them locally with:
 
-> **Zenodo DOI:** `<TO BE ADDED>` — <https://doi.org/TO_BE_ADDED>
+```bash
+python run_pipeline.py --only 6
+```
 
-Download `final_model_best.pth` from that record, or reproduce it locally with
-`python run_pipeline.py --only 6` (which writes it to
-`checkpoints/experiment_6/final_model_best.pth`). The Zenodo record also includes
-a model card with the architecture, preprocessing, training configuration, and
-performance details.
+which trains the final model and writes the checkpoint to
+`checkpoints/experiment_6/final_model_best.pth`.
 
 ## Quick start: segment your own image
 
@@ -171,4 +169,4 @@ If you use this code, please cite the paper (see [`CITATION.cff`](CITATION.cff))
 ## License
 
 Code released under the [MIT License](LICENSE). The histology data are subject to
-the terms stated in the paper's data-availability statement.
+the terms stated in the paper.

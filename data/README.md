@@ -2,9 +2,8 @@
 
 The image and mask data are **not** included in this repository. This folder
 documents the exact layout and format the pipeline expects, so that the study
-can be reproduced either with the archived dataset (see the paper's *Data and
-materials availability* statement) or with your own CD31-stained sections
-prepared in the same way.
+can be reproduced with the dataset described in the paper, or with your own
+CD31-stained sections prepared in the same way.
 
 ```
 data/
