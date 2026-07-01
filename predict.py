@@ -14,9 +14,9 @@ Example
     python predict.py --image folder_of_pngs/ --checkpoint final_model_best.pth --outdir out/
 
 The trained weights (``final_model_best.pth``, ~205 MB) are not bundled in this
-repository. Obtain them from the archived materials referenced in the paper's
-"Data and materials availability" statement, or reproduce them by running the
-pipeline (``python run_pipeline.py --only 6`` writes the checkpoint to
+repository. Download them from the Zenodo archive (DOI: <TO BE ADDED>) linked in
+the README, or reproduce them by running the pipeline
+(``python run_pipeline.py --only 6`` writes the checkpoint to
 ``checkpoints/experiment_6/final_model_best.pth``).
 """
 

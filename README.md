@@ -124,10 +124,22 @@ python run_pipeline.py --dry-run  # print the commands without running them
 
 ---
 
+## Trained model weights
+
+The trained weights (`final_model_best.pth`, ConvNeXt-Small + U-Net, ~205 MB) are
+**not stored in this repository**. They are archived on Zenodo:
+
+> **Zenodo DOI:** `<TO BE ADDED>` — <https://doi.org/TO_BE_ADDED>
+
+Download `final_model_best.pth` from that record, or reproduce it locally with
+`python run_pipeline.py --only 6` (which writes it to
+`checkpoints/experiment_6/final_model_best.pth`). The Zenodo record also includes
+a model card with the architecture, preprocessing, training configuration, and
+performance details.
+
 ## Quick start: segment your own image
 
-With the trained weights (`final_model_best.pth` — from the paper's data
-archive, or reproduced via `python run_pipeline.py --only 6`):
+With the trained weights downloaded (see above):
 
 ```bash
 python predict.py --image my_section.png --checkpoint final_model_best.pth
