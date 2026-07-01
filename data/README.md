@@ -8,12 +8,12 @@ data/
 └── masks/          # matching masks: same filenames
 ```
 
-**Images:** RGB PNGs named with numbers (`1.png`, `2.png`, ...). Any size works
+Images: RGB PNGs named with numbers (`1.png`, `2.png`, ...). Any size works
 (they're resized to 512×512). Images are grouped 5-per-placenta by filename
 (1–5 = placenta 1, 6–10 = placenta 2, ...), which is how the pipeline keeps each
 placenta in a single train/val/test split.
 
-**Masks:** one PNG per image (same filename), with pixel values:
+Masks: one PNG per image (same filename), with pixel values:
 
 | Value | Class |
 |-------|-------|
@@ -21,7 +21,7 @@ placenta in a single train/val/test split.
 | 1 | MBS (maternal blood space) |
 | 2 | Background |
 
-**Check it's set up right:**
+Check it's set up right:
 
 ```bash
 python run_pipeline.py --only 1
